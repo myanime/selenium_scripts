@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.golfsmith.com/" />
+<title>2golfsmith</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">2golfsmith</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>[&quot;http://www.golfsmith.com/stores/069/birmingham&quot;,&quot;http://www.golfsmith.com/stores/026/phoenix-chandler&quot;,&quot;http://www.golfsmith.com/stores/009/phoenix-peoria-at-arrowhead&quot;,&quot;http://www.golfsmith.com/stores/050/phoenix-scottsdale&quot;,&quot;http://www.golfsmith.com/stores/072/tucson&quot;,&quot;http://www.golfsmith.com/stores/042/bay-area-downtown-sf&quot;,&quot;http://www.golfsmith.com/stores/043/bay-area-pleasant-hill&quot;,&quot;http://www.golfsmith.com/stores/044/bay-area-pleasanton&quot;,&quot;http://www.golfsmith.com/stores/045/bay-area-san-jose&quot;,&quot;http://www.golfsmith.com/stores/092/brea&quot;,&quot;http://www.golfsmith.com/stores/126/cerritos&quot;,&quot;http://www.golfsmith.com/stores/039/la-el-segundo&quot;,&quot;http://www.golfsmith.com/stores/090/la-irvine&quot;,&quot;http://www.golfsmith.com/stores/041/la-oxnard&quot;,&quot;http://www.golfsmith.com/stores/034/la-pasadena&quot;,&quot;http://www.golfsmith.com/stores/030/la-upland&quot;,&quot;http://www.golfsmith.com/stores/032/la-woodland-hills&quot;,&quot;http://www.golfsmith.com/stores/088/palm-desert&quot;,&quot;http://www.golfsmith.com/stores/056/san-diego-mission-valley&quot;,&quot;http://www.golfsmith.com/stores/132/colorado-springs&quot;,&quot;http://www.golfsmith.com/stores/052/denver-golden&quot;,&quot;http://www.golfsmith.com/stores/010/denver-park-meadows&quot;,&quot;http://www.golfsmith.com/stores/007/denver-westminster&quot;,&quot;http://www.golfsmith.com/stores/049/norwalk&quot;,&quot;http://www.golfsmith.com/stores/107/christiana&quot;,&quot;http://www.golfsmith.com/stores/095/boca-raton&quot;,&quot;http://www.golfsmith.com/stores/061/miami-hollywood&quot;,&quot;http://www.golfsmith.com/stores/094/naples&quot;,&quot;http://www.golfsmith.com/stores/063/orlando-altamonte-springs&quot;,&quot;http://www.golfsmith.com/stores/055/orlando-millenia&quot;,&quot;http://www.golfsmith.com/stores/059/palm-beach-gardens&quot;,&quot;http://www.golfsmith.com/stores/134/pembroke-pines&quot;,&quot;http://www.golfsmith.com/stores/098/sarasota&quot;,&quot;http://www.golfsmith.com/stores/066/tampa-clearwater&quot;,&quot;http://www.golfsmith.com/stores/077/tampa-lutz&quot;,&quot;http://www.golfsmith.com/stores/105/atlanta-cumberland&quot;,&quot;http://www.golfsmith.com/stores/023/atlanta-duluth&quot;,&quot;http://www.golfsmith.com/stores/024/chicago-downers-grove&quot;,&quot;http://www.golfsmith.com/stores/073/chicago-fox-valley&quot;,&quot;http://www.golfsmith.com/stores/018/chicago-highland-park&quot;,&quot;http://www.golfsmith.com/stores/033/chicago-lincoln-park&quot;,&quot;http://www.golfsmith.com/stores/011/chicago-schaumburg&quot;,&quot;http://www.golfsmith.com/stores/133/chicago-south-loop&quot;,&quot;http://www.golfsmith.com/stores/082/indianapolis&quot;,&quot;http://www.golfsmith.com/stores/093/overland-park&quot;,&quot;http://www.golfsmith.com/stores/106/baltimore&quot;,&quot;http://www.golfsmith.com/stores/114/avon&quot;,&quot;http://www.golfsmith.com/stores/110/bellingham&quot;,&quot;http://www.golfsmith.com/stores/116/natick&quot;,&quot;http://www.golfsmith.com/stores/115/northborough&quot;,&quot;http://www.golfsmith.com/stores/112/reading&quot;,&quot;http://www.golfsmith.com/stores/113/seekonk&quot;,&quot;http://www.golfsmith.com/stores/111/watertown&quot;,&quot;http://www.golfsmith.com/stores/086/detroit-lakeside&quot;,&quot;http://www.golfsmith.com/stores/031/detroit-novi&quot;,&quot;http://www.golfsmith.com/stores/027/detroit-troy&quot;,&quot;http://www.golfsmith.com/stores/068/minn-st-paul-edina&quot;,&quot;http://www.golfsmith.com/stores/016/minn-st-paul-minnetonka&quot;,&quot;http://www.golfsmith.com/stores/075/minn-st-paul-roseville&quot;,&quot;http://www.golfsmith.com/stores/096/st-louis&quot;,&quot;http://www.golfsmith.com/stores/130/summerlin&quot;,&quot;http://www.golfsmith.com/stores/131/akron&quot;,&quot;http://www.golfsmith.com/stores/100/cleveland&quot;,&quot;http://www.golfsmith.com/stores/017/columbus-easton&quot;,&quot;http://www.golfsmith.com/stores/124/dayton&quot;,&quot;http://www.golfsmith.com/stores/121/oklahoma-city&quot;,&quot;http://www.golfsmith.com/stores/080/cascade-station&quot;,&quot;http://www.golfsmith.com/stores/078/tualatin&quot;,&quot;http://www.golfsmith.com/stores/084/philadelphia-willow-grove&quot;,&quot;http://www.golfsmith.com/stores/103/chattanooga&quot;,&quot;http://www.golfsmith.com/stores/067/memphis&quot;,&quot;http://www.golfsmith.com/stores/104/nashville&quot;,&quot;http://www.golfsmith.com/stores/025/austin-arboretum&quot;,&quot;http://www.golfsmith.com/stores/001/austin-i-35&quot;,&quot;http://www.golfsmith.com/stores/015/dfw-arlington&quot;,&quot;http://www.golfsmith.com/stores/006/dfw-lbj-freeway&quot;,&quot;http://www.golfsmith.com/stores/071/dfw-north-richland-hills&quot;,&quot;http://www.golfsmith.com/stores/022/dfw-plano&quot;,&quot;http://www.golfsmith.com/stores/051/dfw-west-plano&quot;,&quot;http://www.golfsmith.com/stores/038/houston-baybrook&quot;,&quot;http://www.golfsmith.com/stores/128/houston-champions&quot;,&quot;http://www.golfsmith.com/stores/074/houston-galleria&quot;,&quot;http://www.golfsmith.com/stores/120/houston-katy&quot;,&quot;http://www.golfsmith.com/stores/012/houston-westheimer&quot;,&quot;http://www.golfsmith.com/stores/005/houston-woodlands&quot;,&quot;http://www.golfsmith.com/stores/109/san-antonio&quot;,&quot;http://www.golfsmith.com/stores/108/fairfax&quot;,&quot;http://www.golfsmith.com/stores/129/richmond&quot;,&quot;http://www.golfsmith.com/stores/101/sterling&quot;,&quot;http://www.golfsmith.com/stores/097/tysons-corner&quot;,&quot;http://www.golfsmith.com/stores/102/woodbridge&quot;]</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>91</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=bcx_close_200893_bottom</td>
+	<td>kill_popup2</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>!${kill_popup2}</td>
+	<td>start2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=bcx_close_200893_bottom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>start2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=×Click to close.</td>
+	<td>kill_popup</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>!${kill_popup}</td>
+	<td>continue</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=×Click to close.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${state_index}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

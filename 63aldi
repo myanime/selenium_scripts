@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://aldifoods.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://storelocator.aldi.us/Presentation/AldiSued/en-us/Start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['New York NY','Los Angeles CA','Chicago IL','Houston TX','Phoenix AZ','Philadelphia PA','San Antonio TX','Dallas TX','San Diego CA','San Jose CA','Detroit MI','San Francisco CA','Jacksonville FL','IndianapolisIN','Austin TX','Columbus OH','Fort Worth TX','Charlotte NC','Memphis TN','Baltimore MD','El Paso TX','Boston MA','Milwaukee WI','Denver CO','Seattle WA','NashvilleTN','Washington DC','Las Vegas NV','Portland OR','LouisvilleKY','Oklahoma City OK','Tucson AZ','Atlanta GA','Albuquerque NM','Fresno CA','Sacramento CA','Long Beach CA','Mesa AZ','Kansas City MO','Omaha NE','Cleveland OH','Virginia Beach VA','Miami FL','Oakland CA','Raleigh NC','Tulsa OK','Minneapolis MN','Colorado Springs CO','HonoluluHI','Arlington TX','Wichita KS','St. Louis MO','Tampa FL','Santa Ana CA','Anaheim CA','Cincinnati OH','Bakersfield CA','Aurora CO','New Orleans LA','Pittsburgh PA','Riverside CA','Toledo OH','Stockton CA','Corpus Christi TX','LexingtonKY','St. Paul MN','AnchorageAK','Newark NJ','Buffalo NY','Plano TX','Henderson NV','Lincoln NE','Fort Wayne IN','Glendale AZ','Greensboro NC','Chandler AZ','St. Petersburg FL','Jersey City NJ','Scottsdale AZ','Norfolk VA','Madison WI','Orlando FL','Birmingham AL','Baton Rouge LA','Durham NC','Laredo TX','Lubbock TX','Chesapeake VA','Chula Vista CA','Garland TX','Winston-Salem NC','North Las Vegas NV','Reno NV','GilbertAZ','Hialeah FL','ArlingtonVA','Akron OH','Irvine CA','Rochester NY','Boise City ID','Modesto CA','Fremont CA','Montgomery AL','Spokane WA','Richmond VA','Yonkers NY','Irving TX','Shreveport LA','San Bernardino CA','Tacoma WA','Glendale CA','Des Moines IA','AugustaGA','Grand Rapids MI','Huntington Beach CA','Mobile AL','Moreno Valley CA','Little Rock AR','Amarillo TX','Columbus GA','Oxnard CA','Fontana CA','Knoxville TN','Fort Lauderdale FL','Salt Lake City UT','Newport News VA','Huntsville AL','Tempe AZ','Brownsville TX','Worcester MA','Fayetteville NC','Jackson MS','Tallahassee FL','Aurora IL','Ontario CA','Providence RI','Overland Park KS','Rancho Cucamonga CA','Chattanooga TN','Oceanside CA','Santa Clarita CA','Garden Grove CA','Vancouver WA','Grand Prairie TX','Peoria AZ','Rockford IL','Cape Coral FL','Springfield MO','Santa Rosa CA','Sioux Falls SD','Port St. Lucie FL','Dayton OH','Salem OR','Pomona CA','Springfield MA','Eugene OR','Corona CA','Pasadena TX','Joliet IL','Pembroke Pines FL','Paterson NJ','Hampton VA','Lancaster CA','Alexandria VA','Salinas CA','Palmdale CA','Naperville IL','Pasadena CA','Kansas City KS','Hayward CA','Hollywood FL','Lakewood CO','Torrance CA','Syracuse NY','Escondido CA','Fort Collins CO','Bridgeport CT','Orange CA','Warren MI','Elk Grove CA','Savannah GA','Mesquite TX','Sunnyvale CA','Fullerton CA','McAllen TX','CaryNC','Cedar Rapids IA','Sterling Heights MI','Columbia SC','Coral Springs FL','Carrollton TX','Elizabeth NJ','Hartford CT','Waco TX','Bellevue WA','New Haven CT','West Valley City UT','Topeka KS','Thousand Oaks CA','El Monte CA','McKinney TX','Concord CA','Visalia CA','Simi Valley CA','Olathe KS','Clarksville TN','Denton TX','Stamford CT','Provo UT','Springfield IL','Killeen TX','Abilene TX','Evansville IN','Gainesville FL','Vallejo CA','Ann Arbor MI','Peoria IL','Lansing MI','Lafayette LA','Thornton CO','AthensGA','Flint MI','Inglewood CA','Roseville CA','Charleston SC','Beaumont TX','Independence MO','Victorville CA','Santa Clara CA','Costa Mesa CA','Miami Gardens FL','Manchester NH','Miramar FL','Downey CA','Arvada CO','Allentown PA','Westminster CO','Waterbury CT','Norman OK','Midland TX','Elgin IL','West Covina CA','Clearwater FL','Cambridge MA','Pueblo CO','West Jordan UT','Round Rock TX','Billings MT','Erie PA','South Bend IN','VenturaCA','Fairfield CA','Lowell MA','Norwalk CA','Burbank CA','Richmond CA','Pompano Beach FL','High Point NC','Murfreesboro TN','Lewisville TX','Richardson TX','Daly City CA','Berkeley CA','Gresham OR','Wichita Falls TX','Green Bay WI','Davenport IA','Palm Bay FL','Columbia MO','Portsmouth VA','Rochester MN','Antioch CA','Wilmington NC','Centennial CO','Odessa TX','West Palm Beach FL','Rialto CA','Everett WA','Murrieta CA','Tyler TX','Temecula CA','Kenosha WI','Frisco TX','Sandy UT','South Gate CA','Carlsbad CA','Gary IN','Mission Viejo CA','North Charleston SC','Boulder CO','Compton CA','Hillsboro OR','Albany NY','Fargo ND','Lakeland FL','Orem UT','Brockton MA','Roanoke VA','Broken Arrow OK','Surprise AZ','Macon GA','El Cajon CA','Carson CA','Quincy MA','Clovis CA','San Mateo CA','Vacaville CA','San Angelo TX','Las Cruces NM','Beaverton OR','Greeley CO','New Bedford MA','Livonia MI','Vista CA','Fall River MA','Waukegan IL','Lawrence KS','DavieFL','Tuscaloosa AL','Redding CA','Lawton OK','Yuma AZ','Sunrise FL','Westminster CA','Sparks NV','Santa Monica CA','Roswell GA','Lynn MA','Nashua NH','Dearborn MI','Santa Maria CA','Spokane Valley WA','Santa Barbara CA','Alhambra CA','Longmont CO','Hesperia CA','Boca Raton FL','Fort Smith AR','Miami Beach FL','Warwick RI','Indio CA','Citrus Heights CA','Deltona FL','Federal Way WA','Hawthorne CA','Duluth MN','Lees Summit MO','College Station TX','Yakima WA','Kent WA','Chico CA','Plantation FL','Norwalk CT','Chino CA','Pearland TX','Trenton NJ','Ogden UT','Sioux City IA','Sandy Springs GA','Suffolk VA','Whittier CA','Racine WI','Newton MA','Avondale AZ','Bloomington MN','Allen TX','Sugar Land TX','Reading PA','CiceroIL','Nampa ID','Troy MI','Livermore CA','Cranston RI','Newport Beach CA','Rio Rancho NM','Greenville NC','Edmond OK','Champaign IL','Camden NJ','Buena Park CA','Danbury CT','Tracy CA','San Marcos CA','Westland MI','Bellingham WA','Farmington Hills MI','Lakewood CA','Canton OH','Clifton NJ','Parma OH','San Leandro CA','Evanston IL','Baldwin Park CA','Melbourne FL','Longview TX','Bend OR','Merced CA','OFallon MO','Hammond IN','Decatur IL','Jacksonville NC','St. Joseph MO','Albany GA','Somerville MA','Lake Forest CA','Southfield MI','Missouri City TX','Deerfield Beach FL','Napa CA','Asheville NC','New Rochelle NY','Redwood City CA','Chino Hills CA','Arlington HeightsIL','Fayetteville AR','Medford OR','Bellflower CA','Bloomington IL','Youngstown OH','Largo FL','St. George UT','Lynchburg VA','Wilmington DE','Gastonia NC','Bryan TX','Palm Coast FL','Bethlehem PA','Scranton PA','Kalamazoo MI','Union City CA','Upland CA','Santa Fe NM','Bloomington IN','Tustin CA','Pawtucket RI','SchaumburgIL','Edinburg TX','Plymouth MN','Mountain View CA','Brooklyn Park MN','League City TX','Lake Charles LA','Hoover AL','Hemet CA','BolingbrookIL','Alameda CA','New Britain CT','Wyoming MI','Baytown TX','Appleton WI','Lorain OH','Apple ValleyCA','Gulfport MS','Lynwood CA','Lawrence MA','Redlands CA','Flower MoundTX','Rochester Hills MI','FishersIN','Mount Vernon NY','Turlock CA','Boynton Beach FL','Missoula MT','Springdale AR','Waukesha WI','Iowa City IA','Folsom CA','Marietta GA','Milpitas CA','Rock Hill SC','Mission TX','PalatineIL','Lauderhill FL','St. Cloud MN','Kenner LA','Meridian ID','Passaic NJ','Redondo Beach CA','Pleasanton CA','Carmel IN','Waterloo IA','SkokieIL','Dothan AL','Concord NC','Pontiac MI','Yorba Linda CA','Loveland CO','Layton UT','Rapid City SD','Mount PleasantSC','Eau Claire WI','Fort Myers FL','East Orange NJ','Pharr TX','North Richland Hills TX','Manteca CA','Muncie IN','Harlingen TX','Laguna Niguel CA','St. Charles MO']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>500</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://storelocator.aldi.us/Presentation/AldiSued/en-us/Start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=SingleSlotGeo</td>
+	<td>${my_current_state}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=SingleSlotGeo</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

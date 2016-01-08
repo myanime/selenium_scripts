@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.fuddruckers.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.fuddruckers.com/findus/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_links'] =[];&nbsp;&nbsp;&nbsp;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['Arrowhead','Phoenix','Superstition Springs','Tempe','Tucson','Buena Park','Burbank','Chula Vista','Concord','Dublin','Emeryville','Fairfield','La Mesa','Lake Forest','Lakewood','Mira Mesa','Mission Valley','Modesto','Ontario','Santa Monica','Union City','Walnut Creek','Saskatoon','Santiago','Bogota','Casnate','Foxwoods Casino','Newark','Chinatown','Santo Domingo','Doral','Ft. Myers','Hialeah','Kendall','Orlando','Orlando','Palmetto Bay','Pembroke Pines','Columbus','Northpoint','Rome','Savannah','Town Center','Windy Hill','Algonquin','Downers North','Matteson','Schaumburg','Terre Haute','West Des Moines','Legnano','Varese','Kansas City','Boardwalk','Harrahs','New Orleans','Ellsworth','Annapolis','Brandywine','Columbia','Owings Mills','Rockville','Silver Spring','North Andover','Reading','Saugus','Village Mall','Centro Comercial Plaza Altabrisa','Detroit Airport','Flint','Lakeside','Southfield','Sterling Heights','Bloomington','Jackson','Branson','Columbia','Springfield','Sunset Plaza','Billings','Billings Main Street','Bozeman','Great Falls','Missoula','Omaha Dodge St.','Grand Canyon Mall','Las Vegas Orleans Casino','Sparks','Parsippany','Roxbury','Albuquerque Menaul','Albuquerque Pan American Freeway','Albuquerque Yale Blvd','Farmington','Middletown','Asheville','Matthews','Minot','Williston','Tulsa','Lake Oswego','Panama City','Chambersburg','Erie','Hummelstown','York','Wola Park Shopping Centre','Caguas','Anderson','Columbia','Greenville','Greer','Myrtle Beach Briarcliffe','Spartanburg','Rapid City','Sioux Falls','Johnson City','Knoxville','Sevierville','Alamo Plaza','Austin - Bee Cave','Austin - W. Slaughter Ln.','Beaumont','Bedford','Botts Lane','Cinco Ranch - Katy','Clear Lake','College Station','Copperfield','Corpus Christi','Dallas','Del Rio','Denton','DFW Airport','Eagle Pass','El Paso','Frankford','Frisco','Ft Worth','Galveston','Grapevine','Greens Road','Greenway Plaza','Houston - Meyer Park','Houston - South MacGregor','Houston Tunnel','Katy','Kerrville','Killeen','Kingwood','Kirkwood','Kurland','Lake Jackson','Lakeline','Laredo','Lubbock','McAllen','McKinney','Midland','Normandy','Odessa','Pearland','Plano','Rockwall','Round Rock','San Antonio','Spring','Stafford','Tidwell','Town &amp; Country','Waco','Webster','West Park','Willowbrook','Woodlands','Wurzbach','Ashburn','Fairfax','Fuddruckers Deluxe Bar &amp; Grill - Newport News','Reagan Airport','Woodbridge','Appleton','Brookfield','Janesville','Middleton']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>180</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.fuddruckers.com/findus/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=restaurant</td>
+	<td>label=regexp:\s+${my_current_state}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=form-restaurant-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_selector'] =&nbsp;&nbsp;'a.resultsSelecta'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var links = window.document.querySelectorAll(storedVars['church_selector']);for(var i =0; i &lt; links.length; i++) {storedVars['church_links'].push(links[i].href);}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${church_links}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View Restaurant Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

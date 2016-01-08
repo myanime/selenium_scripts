@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://groceryoutlet.com/" />
+<title>groceryTemp</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">groceryTemp</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://groceryoutlet.com/store-locator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>[&quot;New York, NY&quot;,&quot;Chicago, IL &quot;,&quot;Houston, TX &quot;,&quot;San Antonio, TX &quot;,&quot;Dallas, TX &quot;,&quot;Detroit, MI &quot;,&quot;Indianapolis, IN &quot;,&quot;Austin, TX &quot;,&quot;Columbus, OH &quot;,&quot;Fort Worth, TX &quot;,&quot;Memphis, TN &quot;,&quot;El Paso, TX &quot;,&quot;Milwaukee, WI &quot;,&quot;Denver, CO &quot;,&quot;Nashville, TN &quot;,&quot;Cleveland, OH &quot;,&quot;Colorado Springs, CO &quot;,&quot;Arlington, TX &quot;,&quot;Cincinnati, OH &quot;,&quot;Aurora, CO &quot;,&quot;Toledo, OH &quot;,&quot;Corpus Christi, TX &quot;,&quot;Plano, TX &quot;,&quot;Fort Wayne, IN &quot;,&quot;Madison, WI &quot;,&quot;Laredo, TX &quot;,&quot;Lubbock, TX &quot;,&quot;Garland, TX &quot;,&quot;Akron, OH &quot;,&quot;Irving, TX &quot;,&quot;Grand Rapids, MI &quot;,&quot;Amarillo, TX &quot;,&quot;Knoxville, TN &quot;,&quot;Brownsville, TX &quot;,&quot;Jackson, MS &quot;,&quot;Aurora, IL &quot;,&quot;Chattanooga, TN &quot;,&quot;Grand Prairie, TX &quot;,&quot;Rockford, IL &quot;,&quot;Dayton, OH &quot;,&quot;Pasadena, TX &quot;,&quot;Joliet, IL &quot;,&quot;Naperville, IL &quot;,&quot;Lakewood, CO &quot;,&quot;Fort Collins, CO &quot;,&quot;Warren, MI &quot;,&quot;Mesquite, TX &quot;,&quot;McAllen, TX &quot;,&quot;Sterling Heights, MI &quot;,&quot;Carrollton, TX &quot;,&quot;Waco, TX &quot;,&quot;McKinney, TX &quot;,&quot;Clarksville, TN &quot;,&quot;Denton, TX &quot;,&quot;Springfield, IL &quot;,&quot;Killeen, TX &quot;,&quot;Abilene, TX &quot;,&quot;Evansville, IN &quot;,&quot;Ann Arbor, MI &quot;,&quot;Peoria, IL &quot;,&quot;Lansing, MI &quot;,&quot;Thornton, CO &quot;,&quot;Flint, MI &quot;,&quot;Beaumont, TX &quot;,&quot;Arvada, CO &quot;,&quot;Westminster, CO &quot;,&quot;Midland, TX &quot;,&quot;Elgin, IL &quot;,&quot;Pueblo, CO &quot;,&quot;Round Rock, TX &quot;,&quot;South Bend, IN &quot;,&quot;Murfreesboro, TN &quot;,&quot;Lewisville, TX &quot;,&quot;Richardson, TX &quot;,&quot;Wichita Falls, TX &quot;,&quot;Green Bay, WI &quot;,&quot;Centennial, CO &quot;,&quot;Odessa, TX &quot;,&quot;Tyler, TX &quot;,&quot;Kenosha, WI &quot;,&quot;Frisco, TX &quot;,&quot;Gary, IN &quot;,&quot;Boulder, CO &quot;,&quot;San Angelo, TX &quot;,&quot;Greeley, CO &quot;,&quot;Livonia, MI &quot;,&quot;Waukegan, IL &quot;,&quot;Dearborn, MI &quot;,&quot;Longmont, CO &quot;,&quot;College Station, TX &quot;,&quot;Pearland, TX &quot;,&quot;Racine, WI &quot;,&quot;Allen, TX &quot;,&quot;Sugar Land, TX &quot;,&quot;Cicero, IL &quot;,&quot;Troy, MI &quot;,&quot;Champaign, IL &quot;,&quot;Westland, MI &quot;,&quot;Farmington Hills, MI &quot;,&quot;Canton, OH &quot;,&quot;Parma, OH &quot;,&quot;Evanston, IL &quot;,&quot;Longview, TX &quot;,&quot;Hammond, IN &quot;,&quot;Decatur, IL &quot;,&quot;Southfield, MI &quot;,&quot;Missouri City, TX &quot;,&quot;Arlington Heights, IL &quot;,&quot;Bloomington, IL &quot;,&quot;Youngstown, OH &quot;,&quot;Bryan, TX &quot;,&quot;Kalamazoo, MI &quot;,&quot;Bloomington, IN &quot;,&quot;Schaumburg, IL &quot;,&quot;Edinburg, TX &quot;,&quot;League City, TX &quot;,&quot;Bolingbrook, IL &quot;,&quot;Wyoming, MI &quot;,&quot;Baytown, TX &quot;,&quot;Appleton, WI &quot;,&quot;Lorain, OH &quot;,&quot;Gulfport, MS &quot;,&quot;Flower Mound, TX &quot;,&quot;Rochester Hills, MI &quot;,&quot;Fishers, IN &quot;,&quot;Waukesha, WI &quot;,&quot;Mission, TX &quot;,&quot;Palatine, IL &quot;,&quot;Carmel, IN &quot;,&quot;Skokie, IL &quot;,&quot;Pontiac, MI &quot;,&quot;Loveland, CO &quot;,&quot;Eau Claire, WI &quot;,&quot;Pharr, TX &quot;,&quot;North Richland Hills, TX &quot;,&quot;Muncie, IN &quot;,&quot;Harlingen, TX &quot;,&quot;Lafayette, IN &quot;,&quot;Oshkosh, WI &quot;,&quot;Jackson, TN &quot;,&quot;Victoria, TX &quot;,&quot;Janesville, WI &quot;,&quot;Hamilton, OH &quot;,&quot;Cedar Park, TX &quot;,&quot;Springfield, OH &quot;,&quot;Johnson City, TN &quot;,&quot;Taylor, MI &quot;,&quot;St. Clair Shores, MI &quot;,&quot;Terre Haute, IN &quot;,&quot;Temple, TX &quot;,&quot;West Allis, WI &quot;,&quot;Tinley Park, IL &quot;,&quot;Franklin, TN &quot;,&quot;Anderson, IN &quot;,&quot;Royal Oak, MI &quot;,&quot;Galveston, TX &quot;,&quot;Des Plaines, IL &quot;,&quot;Port Arthur, TX &quot;,&quot;Rowlett, TX &quot;,&quot;Saginaw, MI &quot;,&quot;Orland Park, IL &quot;,&quot;Conroe, TX &quot;,&quot;Elyria, OH &quot;,&quot;Broomfield, CO &quot;,&quot;Wheaton, IL &quot;,&quot;Novi, MI &quot;,&quot;Kettering, OH &quot;,&quot;Hoffman Estates, IL &quot;,&quot;New Braunfels, TX &quot;,&quot;Mount Prospect, IL &quot;,&quot;Oak Lawn, IL &quot;,&quot;San Marcos, TX &quot;,&quot;Elkhart, IN &quot;,&quot;Euless, TX &quot;,&quot;Normal, IL &quot;,&quot;Battle Creek, MI &quot;,&quot;Hattiesburg, MS &quot;,&quot;Dearborn Heights, MI &quot;,&quot;Mentor, OH &quot;,&quot;Middletown, OH &quot;,&quot;Cuyahoga Falls, OH &quot;,&quot;La Crosse, WI &quot;,&quot;Lakewood, OH &quot;,&quot;Grapevine, TX &quot;,&quot;Mishawaka, IN &quot;,&quot;Berwyn, IL &quot;,&quot;Grand Junction, CO &quot;,&quot;Georgetown, TX &quot;,&quot;Mansfield, OH &quot;,&quot;Oak Park, IL &quot;,&quot;Downers Grove, IL &quot;,&quot;Bedford, TX &quot;,&quot;Sheboygan, WI &quot;,&quot;Hendersonville, TN &quot;,&quot;Greenwood, IN &quot;,&quot;DeSoto, TX &quot;,&quot;Bartlett, TN &quot;,&quot;Kentwood, MI &quot;,&quot;Euclid, OH &quot;,&quot;Newark, OH &quot;,&quot;Roseville, MI &quot;,&quot;Glenview, IL &quot;,&quot;Mansfield, TX &quot;,&quot;Portage, MI &quot;,&quot;Elmhurst, IL &quot;,&quot;East Lansing, MI &quot;,&quot;Cleveland Heights, OH &quot;,&quot;Kokomo, IN &quot;,&quot;Biloxi, MS &quot;,&quot;DeKalb, IL &quot;,&quot;Wauwatosa, WI &quot;,&quot;Cedar Hill, TX &quot;,&quot;Texas City, TX &quot;,&quot;Kingsport, TN &quot;,&quot;Castle Rock, CO &quot;,&quot;Southaven, MS &quot;,&quot;Warren, OH &quot;,&quot;Parker, CO &quot;,&quot;Lawrence, IN &quot;,&quot;Moline, IL &quot;,&quot;Buffalo Grove, IL &quot;,&quot;Lombard, IL &quot;,&quot;Strongsville, OH &quot;,&quot;Commerce City, CO &quot;,&quot;Fairfield, OH &quot;,&quot;The Colony, TX &quot;,&quot;Bartlett, IL &quot;,&quot;Noblesville, IN &quot;,&quot;Fond du Lac, WI &quot;,&quot;Crystal Lake, IL &quot;,&quot;Belleville, IL &quot;,&quot;Midland, MI &quot;,&quot;Littleton, CO &quot;,&quot;Haltom City, TX &quot;,&quot;Carol Stream, IL &quot;,&quot;Columbus, IN &quot;,&quot;Quincy, IL &quot;,&quot;Beavercreek, OH &quot;,&quot;Cleveland, TN &quot;,&quot;Pflugerville, TX &quot;,&quot;Urbana, IL &quot;,&quot;Muskegon, MI &quot;,&quot;Collierville, TN &quot;,&quot;Coppell, TX &quot;,&quot;Brookfield, WI &quot;,&quot;Keller, TX &quot;,&quot;New Berlin, WI &quot;,&quot;Hurst, TX &quot;,&quot;Dublin, OH &quot;,&quot;Huntsville, TX &quot;,&quot;Meridian, MS &quot;,&quot;Rock Island, IL &quot;,&quot;Sherman, TX &quot;,&quot;Romeoville, IL &quot;,&quot;Smyrna, TN &quot;,&quot;Wylie, TX &quot;,&quot;Lima, OH &quot;,&quot;Carpentersville, IL &quot;,&quot;Wausau, WI &quot;,&quot;New Albany, IN &quot;,&quot;Germantown, TN &quot;,&quot;Huber Heights, OH &quot;,&quot;Streamwood, IL &quot;,&quot;Findlay, OH &quot;,&quot;Portage, IN &quot;,&quot;Lancaster, OH &quot;,&quot;Park Ridge, IL &quot;,&quot;Addison, IL &quot;,&quot;Calumet City, IL &quot;,&quot;Hanover Park, IL &quot;,&quot;Richmond, IN &quot;,&quot;Del Rio, TX &quot;,&quot;Texarkana, TX &quot;,&quot;Plainfield, IL &quot;,&quot;Tupelo, MS &quot;,&quot;Westerville, OH &quot;,&quot;Brentwood, TN &quot;,&quot;Beloit, WI &quot;,&quot;Duncanville, TX &quot;,&quot;Greenfield, WI &quot;,&quot;Wheeling, IL &quot;,&quot;Marion, OH &quot;,&quot;Greenville, MS &quot;,&quot;Lancaster, TX &quot;,&quot;Franklin, WI &quot;,&quot;Lincoln Park, MI &quot;,&quot;Rockwall, TX &quot;,&quot;Burleson, TX &quot;,&quot;Brunswick, OH &quot;,&quot;Menomonee Falls, WI &quot;,&quot;Lufkin, TX &quot;,&quot;Columbia, TN &quot;,&quot;La Porte, TX &quot;,&quot;Woodridge, IL &quot;,&quot;Holland, MI &quot;,&quot;Friendswood, TX &quot;,&quot;San Juan, TX &quot;,&quot;Northbrook, IL &quot;,&quot;Stow, OH &quot;,&quot;Gahanna, OH &quot;,&quot;Bay City, MI &quot;,&quot;Grove City, OH &quot;,&quot;Delaware, OH &quot;,&quot;Mundelein, IL &quot;,&quot;Northglenn, CO &quot;,&quot;Reynoldsburg, OH &quot;,&quot;Rosenberg, TX &quot;,&quot;Jackson, MI &quot;,&quot;Oak Creek, WI &quot;,&quot;Pekin, IL &quot;,&quot;Weslaco, TX &quot;,&quot;Elk Grove Village, IL &quot;,&quot;Manitowoc, WI &quot;,&quot;Merrillville, IN &quot;,&quot;St. Charles, IL &quot;,&quot;Englewood, CO &quot;,&quot;Goshen, IN &quot;,&quot;Massillon, OH &quot;,&quot;North Chicago, IL &quot;,&quot;Eastpointe, MI &quot;,&quot;Michigan City, IN &quot;,&quot;Fairborn, OH &quot;,&quot;Danville, IL &quot;,&quot;Nacogdoches, TX &quot;,&quot;Socorro, TX &quot;,&quot;Upper Arlington, OH &quot;,&quot;Glendale Heights, IL &quot;,&quot;Olive Branch, MS &quot;,&quot;Oswego, IL &quot;,&quot;Highland Park, IL &quot;,&quot;Brighton, CO &quot;,&quot;North Olmsted, OH &quot;,&quot;Galesburg, IL &quot;,&quot;Wheat Ridge, CO &quot;,&quot;Deer Park, TX &quot;,&quot;Port Huron, MI &quot;,&quot;West Lafayette, IN &quot;,&quot;Copperas Cove, TX &quot;,&quot;Granite City, IL &quot;,&quot;Schertz, TX &quot;,&quot;Gurnee, IL &quot;,&quot;Chicago Heights, IL &quot;,&quot;Oak Park, MI &quot;,&quot;Westlake, OH &quot;,&quot;Jeffersonville, IN &quot;,&quot;Valparaiso, IN &quot;,&quot;Algonquin, IL &quot;,&quot;Marion, IN &quot;,&quot;La Vergne, TN &quot;,&quot;East Chicago, IN &quot;,&quot;West Bend, WI &quot;,&quot;Cleburne, TX &quot;,&quot;Burton, MI &quot;,&quot;Lake in the Hills, IL &quot;,&quot;Mason, OH &quot;,&quot;Bowling Green, OH &quot;,&quot;Madison Heights, MI &quot;,&quot;Alton, IL &quot;,&quot;Gallatin, TN &quot;,&quot;North Royalton, OH &quot;,&quot;Cookeville, TN &quot;,&quot;Schererville, IN &quot;,&quot;East St. Louis, IL &quot;,&quot;Waxahachie, TX &quot;,&quot;Niles, IL &quot;,&quot;Sun Prairie, WI &quot;,&quot;North Ridgeville, OH &quot;,&quot;Harvey, IL &quot;,&quot;Kent, OH &quot;,&quot;Hilliard, OH &quot;,&quot;Hobart, IN &quot;,&quot;Round Lake Beach, IL &quot;,&quot;Plainfield, IN &quot;,&quot;Oak Forest, IL &quot;,&quot;Southgate, MI &quot;,&quot;Garfield Heights, OH &quot;,&quot;Oak Ridge, TN &quot;,&quot;Morristown, TN &quot;,&quot;Burbank, IL &quot;,&quot;O Fallon, IL &quot;,&quot;Batavia, IL &quot;,&quot;Lake Jackson, TX &quot;,&quot;Xenia, OH &quot;,&quot;Maryville, TN &quot;,&quot;Glen Ellyn, IL &quot;,&quot;McHenry, IL &quot;,&quot;Garden City, MI &quot;,&quot;Kankakee, IL &quot;,&quot;Weatherford, TX &quot;,&quot;Mount Pleasant, MI &quot;,&quot;Lansing, IL &quot;,&quot;Eagle Pass, TX &quot;,&quot;Inkster, MI &quot;,&quot;Southlake, TX &quot;,&quot;Barberton, OH &quot;,&quot;Mount Pleasant, WI &quot;,&quot;Belvidere, IL &quot;,&quot;Shaker Heights, OH &quot;,&quot;Corsicana, TX &quot;,&quot;Farmers Branch, TX &quot;,&quot;West Chicago, IL &quot;,&quot;Wilmette, IL &quot;,&quot;Seguin, TX &quot;,&quot;Clinton, MS &quot;,&quot;Carbondale, IL &quot;,&quot;Spring Hill, TN &quot;,&quot;Superior, WI &quot;,&quot;Wooster, OH &quot;,&quot;Homer Glen, IL &quot;,&quot;Kyle, TX &quot;,&quot;Paris, TX &quot;,&quot;Trotwood, OH &quot;,&quot;Allen Park, MI &quot;,&quot;Medina, OH &quot;,&quot;Collinsville, IL &quot;,&quot;Bristol, TN &quot;,&quot;Sandusky, OH &quot;,&quot;Greenville, TX &quot;,&quot;Leander, TX &quot;,&quot;Harker Heights, TX &quot;,&quot;Riverside, OH &quot;,&quot;Stevens Point, WI &quot;,&quot;Zion, IL &quot;,&quot;Zanesville, OH &quot;,&quot;San Benito, TX &quot;,&quot;Lafayette, CO &quot;,&quot;Neenah, WI &quot;,&quot;Maywood, IL &quot;]</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>427</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<!--Getting the resturants-->
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<!--SelectXpath-->
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://groceryoutlet.com/store-locator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zip-code</td>
+	<td>${my_current_state}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn-default.store-locator--find-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div/div[2]/div[1]/div/div[2]/div[1]/ul/li[${i}]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

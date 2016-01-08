@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.rubios.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['Las Vegas, NV, United States','Salt Lake City, UT, United States','Tucson, AZ, United States','Denver, CO, United States','Sun City, AZ, United States','Gilbert, AZ, United States','Tucson, AZ, United States','San Diego, CA, United States','Chula Vista, CA, United States','El Cajon, CA, United States','Mission Valley, San Diego, CA, United States','Westfield UTC, La Jolla Village Drive, San Diego, CA, United States','Solana Beach, CA, United States','Carmel Mountain Ranch, San Diego, CA, United States','Ramona, CA, United States','Escondido, CA, United States','Vista, CA, United States','Palm Desert, CA, United States','Mission Viejo, CA, United States','Westminster, CA, United States','Newport Beach, CA, United States','Irvine, CA, United States','Orange, CA, United States','Long Beach, CA, United States','Santa Monica, CA, United States','Los Angeles, CA, United States','Pomona, CA, United States','San Bernardino, CA, United States','Pasadena, CA, United States','Palmdale, CA, United States','San Jose, CA, United States','Palo Alto, CA, United States','San Francisco, CA, United States','Berkeley, CA, United States','Fremont, CA, United States','Stockton, CA, United States','Sacramento, CA, United States','Santa Rosa, CA, United States','Palm Desert, CA, United States']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>40</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://www.rubios.com/store-locator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${loop} &lt; 3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input</td>
+	<td>${my_current_state}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>if (window.document.body.innerHTML.indexOf('There are no stores in this area') != -1){storedVars['loop'] = storedVars['loop'] + 1 } else {storedVars['loop'] = 11}</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

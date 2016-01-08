@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.phillysoftpretzelfactory.com" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['19th','22nd','3rd','Abington','Allentown','Aramingo','Avondale','Bayville','Bear','Bellmore','Bensalem','Berlin','Blackwood','Bridgeville','Broad','Broad','Broomall','Burlington','Burlington','Cambridge','Chalfont','Collegeville','Collingswood','Dallas','Deptford','Doylestown','Easton','Eatontown','Edison','Elkton','Ewing','Flemington','Folsom','Georgetown','Gilbertsville','Glassboro','Glenside','Grant','Hackettstown','Hamburg','Harrisburg','Hazlet','Hillsborough','Horsham','Howell','Lahaska','Langhorne','Lansdale','Lawrenceville','Lebanon','Levittown','Lionville','Lititz','Livingston','Lumberton','Marlton','Mayfair','Medford','Melbourne','Millville-Vineland','Monroeville','Moorestown','Mooresville','Muhlenberg','Naples','Norristown','Parkwood','Phoenixville','Piscataway','Pottstown','Quakertown','Richboro','Robbinsville','Salisbury','Scranton','Sewell','Souderton','Southampton','Springfield','UPenn','Urbana','Vineland','Voorhees','Wadsworth','Westfield','Williamstown','Manahawkin','Deptford-(East)','Deptford-(West)','West-Allentown','Camden-Aquarium','Cottman-Avenue','Rehoboth-Beach','Blue-Bell','St.-Clair','Upper-Darby','Chadds-Ford','Rio-Grande','Egg-Harbor','Haddon-Heights','Camp-Hill','Cherry-Hill','Mullica-Hill','Rocky-Hill','Gallery-II','Staten-Island','West-Lawn','Main-Line','Plymouth-Meeting','Clementon-Park','Dorney-Park','Somers-Point','Toms-River','Camden-Riversharks','Naamans-Road','11th-Street','Sansom-Street','Cranberry-Township','Logan-Township','Temple-University','Liacouras-Walk','Bensalem-Walmart','Cinnaminson-Walmart','Hampton-Walmart','Hatfield-Walmart','Knoxville-Walmart','Lebanon-Walmart','Lumberton-Walmart','Manahawkin-Walmart','Mayslanding-Walmart','Mechanicsville-Walmart','Milford-Walmart','Neptune-Walmart','Norfolk-Walmart','Philadelphia-Walmart','Shippensburg-Walmart','Shrewsbury-Walmart','Turnersville-Walmart','Indianapolis-Zoo','Philadelphia-Zoo','Philadelphia-International-Airport','Ocean-City-Boardwalk','Suburban-Station-East','West-Chester-II','Philadelphia-Mills-Mall','69th-Street-Terminal','Frankford--Terminal','Virginia-Beach-Walmart','Dickson-City-Walmart','State-College-Walmart','Beaver-Falls-Walmart','Willow-Grove-Walmart','Winter-Haven-Walmart','Newport-News-Walmart','Suburban-Station-West','Gallery-at-Market-East','Virginia-Beach','Dickson-City','State-College','Beaver-Falls','Willow-Grove','Winter-Haven','Newport-News','Bensalem','Cinnaminson','Hampton','Hatfield','Knoxville','Lebanon','Lumberton','Manahawkin','Mayslanding','Mechanicsville','Milford','Neptune','Norfolk','Philadelphia','Shippensburg','Shrewsbury','Turnersville']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>181</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://phillypretzelfactory.com/locations/${my_current_state}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

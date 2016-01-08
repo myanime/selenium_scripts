@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://fazolis.com/" />
+<title>41fazolis</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">41fazolis</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://fazolis.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['Denver CO ','Colorado Springs CO ','Aurora CO ','southport in','speedway in','carmel in','muncie in','richmond in','Lakewood CO ','Fort Collins CO ','Thornton CO ','Arvada CO ','Westminster CO ','Pueblo CO ','Centennial CO ','Boulder CO ','Greeley CO ','Longmont CO ','Loveland CO ','Broomfield CO ','Grand Junction CO ','Castle Rock CO ','Parker CO ','Commerce City CO ','Littleton CO ','Northglenn CO ','Englewood CO ','Brighton CO ','Wheat Ridge CO ','Lafayette CO ','Chicago IL ','Aurora IL ','Rockford IL ','Joliet IL ','Naperville IL ','Springfield IL ','Peoria IL ','Elgin IL ','Waukegan IL ','Cicero IL ','Champaign IL ','Evanston IL ','Decatur IL ','Arlington Heights IL ','Bloomington IL ','Schaumburg IL ','Bolingbrook IL ','Palatine IL ','Skokie IL ','Tinley Park IL ','Des Plaines IL ','Orland Park IL ','Wheaton IL ','Hoffman Estates IL ','Mount Prospect IL ','Oak Lawn IL ','Normal IL ','Berwyn IL ','Oak Park IL ','Downers Grove IL ','Glenview IL ','Elmhurst IL ','DeKalb IL ','Moline IL ','Buffalo Grove IL ','Lombard IL ','Bartlett IL ','Crystal Lake IL ','Belleville IL ','Carol Stream IL ','Quincy IL ','Urbana IL ','Rock Island IL ','Romeoville IL ','Carpentersville IL ','Streamwood IL ','Park Ridge IL ','Addison IL ','Calumet City IL ','Hanover Park IL ','Plainfield IL ','Wheeling IL ','Woodridge IL ','Northbrook IL ','Mundelein IL ','Pekin IL ','Elk Grove Village IL ','St. Charles IL ','North Chicago IL ','Danville IL ','Glendale Heights IL ','Oswego IL ','Highland Park IL ','Galesburg IL ','Granite City IL ','Gurnee IL ','Chicago Heights IL ','Algonquin IL ','Lake in the Hills IL ','Alton IL ','East St. Louis IL ','Niles IL ','Harvey IL ','Round Lake Beach IL ','Oak Forest IL ','Burbank IL ','O Fallon IL ','Batavia IL ','Glen Ellyn IL ','McHenry IL ','Kankakee IL ','Lansing IL ','Belvidere IL ','West Chicago IL ','Wilmette IL ','Carbondale IL ','Homer Glen IL ','Collinsville IL ','Zion IL ','Maywood IL ','Indianapolis IN ','Fort Wayne IN ','Evansville IN ','South Bend IN ','Gary IN ','Hammond IN ','Bloomington IN ','Fishers IN ','Carmel IN ','Muncie IN ','Lafayette IN ','Terre Haute IN ','Anderson IN ','Elkhart IN ','Mishawaka IN ','Greenwood IN ','Kokomo IN ','Lawrence IN ','Noblesville IN ','Columbus IN ','New Albany IN ','Portage IN ','Richmond IN ','Merrillville IN ','Goshen IN ','Michigan City IN ','West Lafayette IN ','Jeffersonville IN ','Valparaiso IN ','Marion IN ','East Chicago IN ','Schererville IN ','Hobart IN ','Plainfield IN ','Detroit MI ','Grand Rapids MI ','Warren MI ','Sterling Heights MI ','Ann Arbor MI ','Lansing MI ','Flint MI ','Livonia MI ','Dearborn MI ','Troy MI ','Westland MI ','Farmington Hills MI ','Southfield MI ','Kalamazoo MI ','Wyoming MI ','Rochester Hills MI ','Pontiac MI ','Taylor MI ','St. Clair Shores MI ','Royal Oak MI ','Saginaw MI ','Novi MI ','Battle Creek MI ','Dearborn Heights MI ','Kentwood MI ','Roseville MI ','Portage MI ','East Lansing MI ','Midland MI ','Muskegon MI ','Lincoln Park MI ','Holland MI ','Bay City MI ','Jackson MI ','Eastpointe MI ','Port Huron MI ','Oak Park MI ','Burton MI ','Madison Heights MI ','Southgate MI ','Garden City MI ','Mount Pleasant MI ','Inkster MI ','Allen Park MI ','Jackson MS ','Gulfport MS ','Hattiesburg MS ','Biloxi MS ','Southaven MS ','Meridian MS ','Tupelo MS ','Greenville MS ','Olive Branch MS ','Clinton MS ','Columbus OH ','Cleveland OH ','Cincinnati OH ','Toledo OH ','Akron OH ','Dayton OH ','Canton OH ','Parma OH ','Youngstown OH ','Lorain OH ','Hamilton OH ','Springfield OH ','Elyria OH ','Kettering OH ','Mentor OH ','Middletown OH ','Cuyahoga Falls OH ','Lakewood OH ','Mansfield OH ','Euclid OH ','Newark OH ','Cleveland Heights OH ','Warren OH ','Strongsville OH ','Fairfield OH ','Beavercreek OH ','Dublin OH ','Lima OH ','Huber Heights OH ','Findlay OH ','Lancaster OH ','Westerville OH ','Marion OH ','Brunswick OH ','Stow OH ','Gahanna OH ','Grove City OH ','Delaware OH ','Reynoldsburg OH ','Massillon OH ','Fairborn OH ','Upper Arlington OH ','North Olmsted OH ','Westlake OH ','Mason OH ','Bowling Green OH ','North Royalton OH ','North Ridgeville OH ','Kent OH ','Hilliard OH ','Garfield Heights OH ','Xenia OH ','Barberton OH ','Shaker Heights OH ','Wooster OH ','Trotwood OH ','Medina OH ','Sandusky OH ','Riverside OH ','Zanesville OH ','Memphis TN ','Nashville TN ','Knoxville TN ','Chattanooga TN ','Clarksville TN ','Murfreesboro TN ','Jackson TN ','Johnson City TN ','Franklin TN ','Hendersonville TN ','Bartlett TN ','Kingsport TN ','Cleveland TN ','Collierville TN ','Smyrna TN ','Germantown TN ','Brentwood TN ','Columbia TN ','La Vergne TN ','Gallatin TN ','Cookeville TN ','Oak Ridge TN ','Morristown TN ','Maryville TN ','Spring Hill TN ','Bristol TN ','Houston TX ','San Antonio TX ','Dallas TX ','Austin TX ','Fort Worth TX ','El Paso TX ','Arlington TX ','Corpus Christi TX ','Plano TX ','Laredo TX ','Lubbock TX ','Garland TX ','Irving TX ','Amarillo TX ','Brownsville TX ','Grand Prairie TX ','Pasadena TX ','Mesquite TX ','McAllen TX ','Carrollton TX ','Waco TX ','McKinney TX ','Denton TX ','Killeen TX ','Abilene TX ','Beaumont TX ','Midland TX ','Round Rock TX ','Lewisville TX ','Richardson TX ','Wichita Falls TX ','Odessa TX ','Tyler TX ','Frisco TX ','San Angelo TX ','College Station TX ','Pearland TX ','Allen TX ','Sugar Land TX ','Longview TX ','Missouri City TX ','Bryan TX ','Edinburg TX ','League City TX ','Baytown TX ','Flower Mound TX ','Mission TX ','Pharr TX ','North Richland Hills TX ','Harlingen TX ','Victoria TX ','Cedar Park TX ','Temple TX ','Galveston TX ','Port Arthur TX ','Rowlett TX ','Conroe TX ','New Braunfels TX ','San Marcos TX ','Euless TX ','Grapevine TX ','Georgetown TX ','Bedford TX ','DeSoto TX ','Mansfield TX ','Cedar Hill TX ','Texas City TX ','The Colony TX ','Haltom City TX ','Pflugerville TX ','Coppell TX ','Keller TX ','Hurst TX ','Huntsville TX ','Sherman TX ','Wylie TX ','Del Rio TX ','Texarkana TX ','Duncanville TX ','Lancaster TX ','Rockwall TX ','Burleson TX ','Lufkin TX ','La Porte TX ','Friendswood TX ','San Juan TX ','Rosenberg TX ','Weslaco TX ','Nacogdoches TX ','Socorro TX ','Deer Park TX ','Copperas Cove TX ','Schertz TX ','Cleburne TX ','Waxahachie TX ','Lake Jackson TX ','Weatherford TX ','Eagle Pass TX ','Southlake TX ','Corsicana TX ','Farmers Branch TX ','Seguin TX ','Kyle TX ','Paris TX ','Greenville TX ','Leander TX ','Harker Heights TX ','San Benito TX ','Milwaukee WI ','Madison WI ','Green Bay WI ','Kenosha WI ','Racine WI ','Appleton WI ','Waukesha WI ','Eau Claire WI ','Oshkosh WI ','Janesville WI ','West Allis WI ','La Crosse WI ','Sheboygan WI ','Wauwatosa WI ','Fond du Lac WI ','Brookfield WI ','New Berlin WI ','Wausau WI ','Beloit WI ','Greenfield WI ','Franklin WI ','Menomonee Falls WI ','Oak Creek WI ','Manitowoc WI ','West Bend WI ','Sun Prairie WI ','Mount Pleasant WI ','Superior WI ','Stevens Point WI ','Neenah WI','AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY','DC']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>500</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=q</td>
+	<td>${my_current_state}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--######3-->
+<!--Get links from CSS Selector-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_selector'] = 'a.zs-location-detail'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_links'] =[];&nbsp;&nbsp;&nbsp;var links = window.document.querySelectorAll(storedVars['church_selector']);<br />&nbsp;&nbsp;&nbsp;for(var i =0; i &lt; links.length; i++) {storedVars['church_links'].push(links[i].href);&nbsp;&nbsp;&nbsp;}<br /></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${church_links}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Start opening links-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksSize'] = storedVars['church_links'].length;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${profileLinksIndex} &lt; ${profileLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLink'] = storedVars['church_links'][storedVars['profileLinksIndex']]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${profileLink}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}-${profileLinksIndex}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = storedVars['profileLinksIndex'] + 1;	</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

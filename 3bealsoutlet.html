@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.beallsoutlet.com/" />
+<title>aaronbrothers</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">aaronbrothers</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>SNAPSHOT_LOCAL_FOLDER</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=area[alt=&quot;Store Locator&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=AL</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementById('state').options.length</td>
+	<td>state_amount</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${state_index}&lt;${state_amount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementById('state').options[${state_index}].value</td>
+	<td>state_value</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementById('state').options[${state_index}].label</td>
+	<td>state_label</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=${state_label}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=resultsSelect</td>
+	<td>label=50</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=resultsSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${SNAPSHOT_LOCAL_FOLDER}/beallsoutlet-${state_label}-locations.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${state_index}+1</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

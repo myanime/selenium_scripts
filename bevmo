@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.bevmo.com/" />
+<title>church3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">church3</td></tr>
+</thead><tbody>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.bevmo.com/storelocator/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=YES, I am 21 or over</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_selector'] = 'div.block-subtitle a'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_links'] =[];&nbsp;&nbsp;&nbsp;var links = window.document.querySelectorAll(storedVars['church_selector']);<br />&nbsp;&nbsp;&nbsp;for(var i =0; i &lt; links.length; i++) {storedVars['church_links'].push(links[i].href);&nbsp;&nbsp;&nbsp;}<br /></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${church_links}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksSize'] = storedVars['church_links'].length;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${profileLinksIndex} &lt; ${profileLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLink'] = storedVars['church_links'][storedVars['profileLinksIndex']]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${profileLink}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${profileLinksIndex}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = storedVars['profileLinksIndex'] + 1;	</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

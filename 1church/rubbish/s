@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+						<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="selenium.base" href="http://www.arbys.com/" />
+	<title>arbys.com</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+	<thead>
+	<tr><td rowspan="1" colspan="3">arbys.com</td></tr>
+	</thead>
+	<tbody>
+
+	<tr>
+		<td>open</td>
+		<td>http://locations.arbys.com/index.html</td>
+		<td></td>
+	</tr>
+
+	<!-- Collecting states/provinces links into stateLinksArray.
+         Note that here we count '/' characters in URL.
+         For example http://locations.arbys.com/al.html has 3 '/' - this means it's link to state. -->
+	<tr>
+		<td>storeEval</td>
+		<td>
+			storedVars['resultLinks'] = [];
+			var stateLinks = window.document.querySelectorAll('.c-directory-list[data-columns="4"] a.c-directory-list-content-item-link');
+			storedVars['stateLinksArray'] = [];
+			for(var i = 0; i < stateLinks.length; i++) {
+			var link = stateLinks[i].href;
+			if ((link.match(/\//g) || []).length == 3) {
+			storedVars['stateLinksArray'].push(link);
+			}
+			}
+			storedVars['stateLinksIndex'] = 0;
+			storedVars['stateLinksSize'] = storedVars['stateLinksArray'].length;
+		</td>
+		<td></td>
+	</tr>
+
+	<!-- iterating over states/provinces links -->
+	<tr>
+		<td>while</td>
+		<td>${stateLinksIndex} < ${stateLinksSize}</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>storeEval</td>
+		<td>
+			storedVars['stateLinkToOpen'] = storedVars.stateLinksArray[storedVars.stateLinksIndex];
+			storedVars['stateLinksIndex'] = storedVars['stateLinksIndex'] + 1;
+		</td>
+		<td></td>
+	</tr>
+
+	<!-- open each state/province -->
+	<tr>
+		<td>open</td>
+		<td>${stateLinkToOpen}</td>
+		<td></td>
+	</tr>
+
+	<!-- Collecting cities links into cityLinksArray.
+         Note that here we count '/' characters in URL.
+         For example http://locations.arbys.com/al/alabaster.html has 4 '/' - this means it's link to city. -->
+	<tr>
+		<td>storeEval</td>
+		<td>
+			var cityLinks = window.document.querySelectorAll('a.c-directory-list-content-item-link');
+			storedVars['cityLinksArray'] = [];
+			for (var i = 0; i < cityLinks.length; i++) {
+			var link = cityLinks[i].href;
+			if ((link.match(/\//g) || []).length == 4) {
+			storedVars['cityLinksArray'].push(link);
+			}
+			}
+			storedVars['cityLinksIndex'] = 0;
+			storedVars['cityLinksSize'] = storedVars['cityLinksArray'].length;
+		</td>
+		<td></td>
+	</tr>
+
+	<!-- iterating over cities links -->
+	<tr>
+		<td>while</td>
+		<td>${cityLinksIndex} < ${cityLinksSize}</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>storeEval</td>
+		<td>
+			storedVars['cityLinkToOpen'] = storedVars.cityLinksArray[storedVars.cityLinksIndex];
+			storedVars['cityLinksIndex'] = storedVars['cityLinksIndex'] + 1;
+		</td>
+		<td></td>
+	</tr>
+
+	<!-- open each city -->
+	<tr>
+		<td>open</td>
+		<td>${cityLinkToOpen}</td>
+		<td></td>
+	</tr>
+
+	<!-- collecting Details page links into resultLinks -->
+	<tr>
+		<td>storeEval</td>
+		<td>
+			var addressLinks = window.document.querySelectorAll('a.c-location-grid-item-link-details');
+			for (var i = 0; i < addressLinks.length; i++) {
+			storedVars['resultLinks'].push(addressLinks[i].href);
+			}
+		</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>endWhile</td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>endWhile</td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>storeEval</td>
+		<td>
+			storedVars['linkIndex'] = 0;
+			storedVars['linksSize'] = storedVars['resultLinks'].length;</td>
+		<td></td>
+	</tr>
+
+	<!-- iterating over resultLinks links to capture Details page screenshots -->
+	<tr>
+		<td>while</td>
+		<td>${linkIndex} < ${linksSize}</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>storeEval</td>
+		<td>storedVars['linkToOpen'] = storedVars.resultLinks[storedVars.linkIndex];</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>open</td>
+		<td>${linkToOpen}</td>
+		<td></td>
+	</tr>
+
+	<!-- change path to your existing local folder, note that Selenium IDE can't auro-create folders -->
+	<tr>
+		<td>captureEntirePageScreenshot</td>
+		<td>/data/temp/${linkIndex}.png</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>storeEval</td>
+		<td>storedVars['linkIndex'] = storedVars['linkIndex'] + 1;</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>endWhile</td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	</tbody></table>
+
+</body>
+</html> 
+                    

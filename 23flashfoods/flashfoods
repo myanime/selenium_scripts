@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://flashfoods.com/" />
+<title>flashfoods</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">flashfoods</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://flashfoods.com/locator_storenum.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Button1</td>
+	<td></td>
+</tr>
+<!--Pagination 0-9-->
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>id=txtStorenum</td>
+	<td>00${i}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Pagination 9 - 99-->
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 99</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>id=txtStorenum</td>
+	<td>0${i}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Pagination 99 - 999-->
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 999</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>id=txtStorenum</td>
+	<td>${i}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

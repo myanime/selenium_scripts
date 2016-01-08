@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.fuddruckers.com/" />
+<title>8fuddruckersSimple</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">8fuddruckersSimple</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['http://www.fuddruckers.com/local/location.php?s=256','http://www.fuddruckers.com/local/location.php?s=23','http://www.fuddruckers.com/local/location.php?s=278','http://www.fuddruckers.com/local/location.php?s=235','http://www.fuddruckers.com/local/location.php?s=103','http://www.fuddruckers.com/local/location.php?s=143','http://www.fuddruckers.com/local/location.php?s=136','http://www.fuddruckers.com/local/location.php?s=55','http://www.fuddruckers.com/local/location.php?s=161','http://www.fuddruckers.com/local/location.php?s=371','http://www.fuddruckers.com/local/location.php?s=388','http://www.fuddruckers.com/local/location.php?s=7106','http://www.fuddruckers.com/local/location.php?s=62','http://www.fuddruckers.com/local/location.php?s=32','http://www.fuddruckers.com/local/location.php?s=78','http://www.fuddruckers.com/local/location.php?s=81','http://www.fuddruckers.com/local/location.php?s=433','http://www.fuddruckers.com/local/location.php?s=639','http://www.fuddruckers.com/local/location.php?s=701','http://www.fuddruckers.com/local/location.php?s=3028','http://www.fuddruckers.com/local/location.php?s=347','http://www.fuddruckers.com/local/location.php?s=311','http://www.fuddruckers.com/local/location.php?s=107','http://www.fuddruckers.com/local/location.php?s=99997','http://www.fuddruckers.com/local/location.php?s=9996','http://www.fuddruckers.com/local/location.php?s=7052','http://www.fuddruckers.com/local/location.php?s=603','http://www.fuddruckers.com/local/location.php?s=3481','http://www.fuddruckers.com/local/location.php?s=350','http://www.fuddruckers.com/local/location.php?s=7105','http://www.fuddruckers.com/local/location.php?s=409','http://www.fuddruckers.com/local/location.php?s=249','http://www.fuddruckers.com/local/location.php?s=637','http://www.fuddruckers.com/local/location.php?s=113','http://www.fuddruckers.com/local/location.php?s=640','http://www.fuddruckers.com/local/location.php?s=640','http://www.fuddruckers.com/local/location.php?s=7109','http://www.fuddruckers.com/local/location.php?s=641','http://www.fuddruckers.com/local/location.php?s=611','http://www.fuddruckers.com/local/location.php?s=233','http://www.fuddruckers.com/local/location.php?s=402','http://www.fuddruckers.com/local/location.php?s=608','http://www.fuddruckers.com/local/location.php?s=223','http://www.fuddruckers.com/local/location.php?s=47','http://www.fuddruckers.com/local/location.php?s=3019','http://www.fuddruckers.com/local/location.php?s=67','http://www.fuddruckers.com/local/location.php?s=90','http://www.fuddruckers.com/local/location.php?s=126','http://www.fuddruckers.com/local/location.php?s=3555','http://www.fuddruckers.com/local/location.php?s=605','http://www.fuddruckers.com/local/location.php?s=7041','http://www.fuddruckers.com/local/location.php?s=7040','http://www.fuddruckers.com/local/location.php?s=571','http://www.fuddruckers.com/local/location.php?s=632','http://www.fuddruckers.com/local/location.php?s=643','http://www.fuddruckers.com/local/location.php?s=423','http://www.fuddruckers.com/local/location.php?s=7367','http://www.fuddruckers.com/local/location.php?s=68','http://www.fuddruckers.com/local/location.php?s=3018','http://www.fuddruckers.com/local/location.php?s=281','http://www.fuddruckers.com/local/location.php?s=174','http://www.fuddruckers.com/local/location.php?s=704','http://www.fuddruckers.com/local/location.php?s=284','http://www.fuddruckers.com/local/location.php?s=600','http://www.fuddruckers.com/local/location.php?s=151','http://www.fuddruckers.com/local/location.php?s=644','http://www.fuddruckers.com/local/location.php?s=120','http://www.fuddruckers.com/local/location.php?s=450','http://www.fuddruckers.com/local/location.php?s=99','http://www.fuddruckers.com/local/location.php?s=710','http://www.fuddruckers.com/local/location.php?s=370','http://www.fuddruckers.com/local/location.php?s=104','http://www.fuddruckers.com/local/location.php?s=43','http://www.fuddruckers.com/local/location.php?s=270','http://www.fuddruckers.com/local/location.php?s=424','http://www.fuddruckers.com/local/location.php?s=369','http://www.fuddruckers.com/local/location.php?s=132','http://www.fuddruckers.com/local/location.php?s=39','http://www.fuddruckers.com/local/location.php?s=374','http://www.fuddruckers.com/local/location.php?s=327','http://www.fuddruckers.com/local/location.php?s=326','http://www.fuddruckers.com/local/location.php?s=265','http://www.fuddruckers.com/local/location.php?s=139','http://www.fuddruckers.com/local/location.php?s=642','http://www.fuddruckers.com/local/location.php?s=650','http://www.fuddruckers.com/local/location.php?s=661','http://www.fuddruckers.com/local/location.php?s=204','http://www.fuddruckers.com/local/location.php?s=622','http://www.fuddruckers.com/local/location.php?s=377','http://www.fuddruckers.com/local/location.php?s=324','http://www.fuddruckers.com/local/location.php?s=344','http://www.fuddruckers.com/local/location.php?s=7017','http://www.fuddruckers.com/local/location.php?s=732','http://www.fuddruckers.com/local/location.php?s=116','http://www.fuddruckers.com/local/location.php?s=267','http://www.fuddruckers.com/local/location.php?s=7188','http://www.fuddruckers.com/local/location.php?s=7187','http://www.fuddruckers.com/local/location.php?s=376','http://www.fuddruckers.com/local/location.php?s=122','http://www.fuddruckers.com/local/location.php?s=99998','http://www.fuddruckers.com/local/location.php?s=612','http://www.fuddruckers.com/local/location.php?s=667','http://www.fuddruckers.com/local/location.php?s=332','http://www.fuddruckers.com/local/location.php?s=7054','http://www.fuddruckers.com/local/location.php?s=268','http://www.fuddruckers.com/local/location.php?s=379','http://www.fuddruckers.com/local/location.php?s=184','http://www.fuddruckers.com/local/location.php?s=446','http://www.fuddruckers.com/local/location.php?s=343','http://www.fuddruckers.com/local/location.php?s=87','http://www.fuddruckers.com/local/location.php?s=421','http://www.fuddruckers.com/local/location.php?s=183','http://www.fuddruckers.com/local/location.php?s=333','http://www.fuddruckers.com/local/location.php?s=405','http://www.fuddruckers.com/local/location.php?s=320','http://www.fuddruckers.com/local/location.php?s=84','http://www.fuddruckers.com/local/location.php?s=356','http://www.fuddruckers.com/local/location.php?s=261','http://www.fuddruckers.com/local/location.php?s=307','http://www.fuddruckers.com/local/location.php?s=384','http://www.fuddruckers.com/local/location.php?s=1','http://www.fuddruckers.com/local/location.php?s=259','http://www.fuddruckers.com/local/location.php?s=8','http://www.fuddruckers.com/local/location.php?s=401','http://www.fuddruckers.com/local/location.php?s=3269','http://www.fuddruckers.com/local/location.php?s=429','http://www.fuddruckers.com/local/location.php?s=314','http://www.fuddruckers.com/local/location.php?s=7224','http://www.fuddruckers.com/local/location.php?s=636','http://www.fuddruckers.com/local/location.php?s=445','http://www.fuddruckers.com/local/location.php?s=449','http://www.fuddruckers.com/local/location.php?s=3020','http://www.fuddruckers.com/local/location.php?s=325','http://www.fuddruckers.com/local/location.php?s=438','http://www.fuddruckers.com/local/location.php?s=348','http://www.fuddruckers.com/local/location.php?s=25','http://www.fuddruckers.com/local/location.php?s=340','http://www.fuddruckers.com/local/location.php?s=7','http://www.fuddruckers.com/local/location.php?s=286','http://www.fuddruckers.com/local/location.php?s=14','http://www.fuddruckers.com/local/location.php?s=3203','http://www.fuddruckers.com/local/location.php?s=3351','http://www.fuddruckers.com/local/location.php?s=259','http://www.fuddruckers.com/local/location.php?s=652','http://www.fuddruckers.com/local/location.php?s=309','http://www.fuddruckers.com/local/location.php?s=232','http://www.fuddruckers.com/local/location.php?s=13','http://www.fuddruckers.com/local/location.php?s=26','http://www.fuddruckers.com/local/location.php?s=616','http://www.fuddruckers.com/local/location.php?s=359','http://www.fuddruckers.com/local/location.php?s=241','http://www.fuddruckers.com/local/location.php?s=378','http://www.fuddruckers.com/local/location.php?s=254','http://www.fuddruckers.com/local/location.php?s=665','http://www.fuddruckers.com/local/location.php?s=61','http://www.fuddruckers.com/local/location.php?s=9','http://www.fuddruckers.com/local/location.php?s=658','http://www.fuddruckers.com/local/location.php?s=258','http://www.fuddruckers.com/local/location.php?s=118','http://www.fuddruckers.com/local/location.php?s=269','http://www.fuddruckers.com/local/location.php?s=357','http://www.fuddruckers.com/local/location.php?s=6','http://www.fuddruckers.com/local/location.php?s=278','http://www.fuddruckers.com/local/location.php?s=302','http://www.fuddruckers.com/local/location.php?s=246','http://www.fuddruckers.com/local/location.php?s=231','http://www.fuddruckers.com/local/location.php?s=58','http://www.fuddruckers.com/local/location.php?s=260','http://www.fuddruckers.com/local/location.php?s=106','http://www.fuddruckers.com/local/location.php?s=5','http://www.fuddruckers.com/local/location.php?s=24','http://www.fuddruckers.com/local/location.php?s=3','http://www.fuddruckers.com/local/location.php?s=625','http://www.fuddruckers.com/local/location.php?s=199','http://www.fuddruckers.com/local/location.php?s=3873','http://www.fuddruckers.com/local/location.php?s=614','http://www.fuddruckers.com/local/location.php?s=872','http://www.fuddruckers.com/local/location.php?s=656','http://www.fuddruckers.com/local/location.php?s=53','http://www.fuddruckers.com/local/location.php?s=408','http://www.fuddruckers.com/local/location.php?s=881']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>181</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['rname'] = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.8 }).join(&quot;&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${rname}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

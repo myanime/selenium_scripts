@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.outback.com/" />
+<title>chicken1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">chicken1</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>//*[@id=&quot;LocationDirectory&quot;]/section[1]/div/div/div/ul/li[</td>
+	<td>xpath1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>]</td>
+	<td>xpath2</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://www.outback.com/locations/directory</td>
+	<td></td>
+</tr>
+<!--Getting the resturants-->
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.i &lt; 50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${xpath1}${i}${xpath2}</td>
+	<td>xpathfull</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>${xpathfull}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

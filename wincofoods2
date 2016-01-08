@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://wincofoods.com/" />
+<title>wincofoods2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">wincofoods2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Arizona&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in California&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Idaho&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Nevada&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Oregon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Texas&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Utah&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://wincofoods.com/grocery-store-finder/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Grocery stores in Washington&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/a8</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

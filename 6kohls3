@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0082)file:///C:/Users/ALEKSE~1/AppData/Local/Temp/upload_1448799717620_fuddruckers.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head profile="http://selenium-ide.openqa.org/profiles/test-case"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="selenium.base" href="http://www.kohls.com/">
+<title>kohls.com</title>
+</head>
+<body>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr><td rowspan="1" colspan="3">kohls.com</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_links'] =[];&nbsp;&nbsp;&nbsp;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>['http://www.kohls.com/stores/al.shtml','http://www.kohls.com/stores/ak.shtml','http://www.kohls.com/stores/az.shtml','http://www.kohls.com/stores/ar.shtml','http://www.kohls.com/stores/ca.shtml','http://www.kohls.com/stores/co.shtml','http://www.kohls.com/stores/ct.shtml','http://www.kohls.com/stores/de.shtml','http://www.kohls.com/stores/fl.shtml','http://www.kohls.com/stores/ga.shtml','http://www.kohls.com/stores/id.shtml','http://www.kohls.com/stores/il.shtml','http://www.kohls.com/stores/in.shtml','http://www.kohls.com/stores/ia.shtml','http://www.kohls.com/stores/ks.shtml','http://www.kohls.com/stores/ky.shtml','http://www.kohls.com/stores/la.shtml','http://www.kohls.com/stores/me.shtml','http://www.kohls.com/stores/md.shtml','http://www.kohls.com/stores/ma.shtml','http://www.kohls.com/stores/mi.shtml','http://www.kohls.com/stores/mn.shtml','http://www.kohls.com/stores/ms.shtml','http://www.kohls.com/stores/mo.shtml','http://www.kohls.com/stores/mt.shtml','http://www.kohls.com/stores/ne.shtml','http://www.kohls.com/stores/nv.shtml','http://www.kohls.com/stores/nh.shtml','http://www.kohls.com/stores/nj.shtml','http://www.kohls.com/stores/nm.shtml','http://www.kohls.com/stores/ny.shtml','http://www.kohls.com/stores/nc.shtml','http://www.kohls.com/stores/nd.shtml','http://www.kohls.com/stores/oh.shtml','http://www.kohls.com/stores/ok.shtml','http://www.kohls.com/stores/or.shtml','http://www.kohls.com/stores/pa.shtml','http://www.kohls.com/stores/ri.shtml','http://www.kohls.com/stores/sc.shtml','http://www.kohls.com/stores/sd.shtml','http://www.kohls.com/stores/tn.shtml','http://www.kohls.com/stores/tx.shtml','http://www.kohls.com/stores/ut.shtml','http://www.kohls.com/stores/vt.shtml','http://www.kohls.com/stores/va.shtml','http://www.kohls.com/stores/wa.shtml','http://www.kohls.com/stores/wv.shtml','http://www.kohls.com/stores/wi.shtml','http://www.kohls.com/stores/wy.shtml']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['church_selector'] =&nbsp;&nbsp;'a.citylist'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var links = window.document.querySelectorAll(storedVars['church_selector']);for(var i =0; i &lt; links.length; i++) {storedVars['church_links'].push(links[i].href);}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${church_links}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Select State-->
+<!--open and add links-->
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>profileLinksIndex</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksSize'] = storedVars['church_links'].length;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${profileLinksIndex} &lt; ${profileLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLink'] = storedVars['church_links'][storedVars['profileLinksIndex']]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${profileLink}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${profileLinksIndex}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = storedVars['profileLinksIndex'] + 1;	</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</body></html>

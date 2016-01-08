@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://stat.pcanet.org/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.84locator.com/StoreLocator/Locator.aspx?z=15330</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<!--CSS State Selector-->
+<tr>
+	<td>select</td>
+	<td>id=ContentPlaceHolder1_storeLocator1_lstStates</td>
+	<td>label=Alabama</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=option[value=&quot;AL&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ContentPlaceHolder1_storeLocator1_lstStates</td>
+	<td>label=Arizona</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=option[value=&quot;AZ&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<!--XPath State Selector-->
+<tr>
+	<td>selectWindow</td>
+	<td>name=fbMainContainer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=fbInspectButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=fbCopyXPath</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=fbCopyXPath</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>//html/body/div/form/div[8]/div/div/div[1]/div/div[1]/select/option[</td>
+	<td>xpath1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>]</td>
+	<td>xpath2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.i &lt; 32</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${xpath1}${i}${xpath2}</td>
+	<td>xpathfull</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>/html/body/div/form/div[8]/div/div/div[1]/div/div[1]/select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>${xpathfull}</td>
+	<td></td>
+</tr>
+<!--Selecting Inner Links using CSS Selector-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileSelector'] = 'a.select'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${css_selector}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinks'] =[];&nbsp;&nbsp;var links = window.document.querySelectorAll(storedVars['profileSelector']);&nbsp;&nbsp;for(var i =0; i &lt; links.length; i++) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storedVars['profileLinks'].push(links[i].href);&nbsp;&nbsp;}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${profileLinks}</td>
+	<td></td>
+</tr>
+<!--Loop Setup-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksSize'] = storedVars['profileLinks'].length;</td>
+	<td></td>
+</tr>
+<!--PROFILE - loop-->
+<tr>
+	<td>while</td>
+	<td>${profileLinksIndex} &lt; ${profileLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLink'] = storedVars['profileLinks'][storedVars['profileLinksIndex']]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${profileLink}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = storedVars['profileLinksIndex'] + 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshotsFolder}/${i}-${profileLinksIndex}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

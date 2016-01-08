@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://fazolis.zipscene.com/" />
+<title>fazolis</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">fazolis</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/locations/?phpMyAdmin=oBZtvryz78qMqdbntyC6eeYp6Q2&amp;phpMyAdmin=WG7b0%2CHg8JXubS6PYNJaTQ1LkOb&amp;phpMyAdmin=xxcQU1VXzmvArddLNHbbD2ywzo7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>#zs-location-29c4a0e4ef &gt; h4</td>
+	<td>selectorDetailsLinks</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['linksArray'] = [];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var links = window.document.querySelectorAll('${selectorDetailsLinks}');&nbsp;&nbsp;var linksArray = storedVars['linksArray'];&nbsp;&nbsp;for (var i = 0; i &lt; links.length; i++) { 	linksArray.push(links[i].href); }</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${linksArray}</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

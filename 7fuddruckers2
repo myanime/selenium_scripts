@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0082)file:///C:/Users/ALEKSE~1/AppData/Local/Temp/upload_1448799717620_fuddruckers.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head profile="http://selenium-ide.openqa.org/profiles/test-case"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="selenium.base" href="http://www.fuddruckers.com/">
+<title>fuddruckers.com</title>
+</head>
+<body>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr><td rowspan="1" colspan="3">fuddruckers.com</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['linksArray'] =[];&nbsp;&nbsp;&nbsp;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.fuddruckers.com/findus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var select = window.document.querySelector('#restaurant'); storedVars['statesSize'] = select.options.length; storedVars['stateIndex'] =0; var stateLabelsArray = []; for (var i = 0; i&lt;select.options.length;i++){stateLabelsArray.push(select.options[i].label);} storedVars['stateLabelsArray'] = stateLabelsArray;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${stateLabelsArray}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${stateIndex}&lt;${statesSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.stateLabelsArray[storedVars.stateIndex]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=//select/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=form-restaurant-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var linksArray = []; var links = window.document.querySelectorAll('.resultsSelecta'); for (var i = 0; i&lt;links.length;i++){linksArray.push(links[i].href);}storedVars['linksArray'] = linksArray;storedVars['linkIndex'] =0;storedVars['linksSize'] = links.length;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${linkIndex} &lt; ${linksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['linkToOpen'] = storedVars.linksArray[storedVars.linkIndex]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${linkToOpen}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['rname'] = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;.split(&quot;&quot;).filter(function(e, i, a) { return Math.random() &gt; 0.8 }).join(&quot;&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${rname}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${linkIndex} + 1;</td>
+	<td>linkIndex</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.fuddruckers.com/findus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['stateIndex']=storedVars['stateIndex'] + 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</body></html>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.harrisbank.com" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://locator.bmo.com/?t=hb&amp;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=advancedSearchHeader</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=AZ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;AZ&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/az.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/az-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=FL</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/fl.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/fl-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=IL</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.arrows &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/ila.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>12</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PageArea']/span[3]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il3.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>22</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 31</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PageArea']/span[3]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il4.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>32</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 34</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/il-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=IN</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;IN&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/in.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/in-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=KS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/ks.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/ks-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=MN</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/msn.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/mn-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=MO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/mo.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/mo-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchButtonSmall</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=provinceSelect</td>
+	<td>label=WI</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AdvancedSearchButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>25000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wi.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wil-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.arrows &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wi2.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>12</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wil-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PageArea']/span[3]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>22</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 31</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wil-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PageArea']/span[3]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wi3.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>32</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt; 34</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/wil-${i}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

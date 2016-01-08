@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+						<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="selenium.base" href="http://www.arbys.com/" />
+	<title>arbys.com</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+	<thead>
+	<tr><td rowspan="1" colspan="3">arbys.com</td></tr>
+	</thead>
+	<tbody>
+
+	<tr>
+	<td>open</td>
+	<td>http://locations.arbys.com/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td><br />			storedVars['resultLinks'] = [];<br />			var stateLinks = window.document.querySelectorAll('.c-directory-list[data-columns=&quot;4&quot;] a.c-directory-list-content-item-link');<br />			storedVars['stateLinksArray'] = [];<br />			for(var i = 0; i &lt; stateLinks.length; i++) {<br />			var link = stateLinks[i].href;<br />			if ((link.match(/\//g) || []).length == 3) {<br />			storedVars['stateLinksArray'].push(link);<br />			}<br />			}<br />			storedVars['stateLinksIndex'] = 0;<br />			storedVars['stateLinksSize'] = storedVars['stateLinksArray'].length;<br />		</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${stateLinksIndex} &lt; ${stateLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td><br />			storedVars['stateLinkToOpen'] = storedVars.stateLinksArray[storedVars.stateLinksIndex];<br />			storedVars['stateLinksIndex'] = storedVars['stateLinksIndex'] + 1;<br />		</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${stateLinkToOpen}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td><br />			var cityLinks = window.document.querySelectorAll('a.c-directory-list-content-item-link');<br />			storedVars['cityLinksArray'] = [];<br />			for (var i = 0; i &lt; cityLinks.length; i++) {<br />			var link = cityLinks[i].href;<br />			if ((link.match(/\//g) || []).length == 4) {<br />			storedVars['cityLinksArray'].push(link);<br />			}<br />			}<br />			storedVars['cityLinksIndex'] = 0;<br />			storedVars['cityLinksSize'] = storedVars['cityLinksArray'].length;<br />		</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${cityLinksIndex} &lt; ${cityLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td><br />			storedVars['cityLinkToOpen'] = storedVars.cityLinksArray[storedVars.cityLinksIndex];<br />			storedVars['cityLinksIndex'] = storedVars['cityLinksIndex'] + 1;<br />		</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${cityLinkToOpen}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td><br />			var addressLinks = window.document.querySelectorAll('a.c-location-grid-item-link-details');<br />			for (var i = 0; i &lt; addressLinks.length; i++) {<br />			storedVars['resultLinks'].push(addressLinks[i].href);<br />			}<br />		</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td><br />			storedVars['linkIndex'] = 0;<br />			storedVars['linksSize'] = storedVars['resultLinks'].length;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${linkIndex} &lt; ${linksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['linkToOpen'] = storedVars.resultLinks[storedVars.linkIndex];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${linkToOpen}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/data/temp/${linkIndex}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['linkIndex'] = storedVars['linkIndex'] + 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+
+</body>
+</html> 
+                    

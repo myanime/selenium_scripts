@@ -1,0 +1,60 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+STATES - CSS selector
+storeEval	storedVars['stateSelector'] = 'a.domainList'	
+CITIES - CSS selector
+storeEval	storedVars['citySelector'] = 'a.regionList'	
+PROFILES - CSS selector
+storeEval	storedVars['profileSelector'] = 'a[data-gaq="City List Store Info"]'	
+SCREENSHOTS - make sure the path existis on your PC
+store	/Users/Mick/work/selenium	screenshotsFolder
+------------------------------------------------------------------------------------------------------------------------------------------------------
+LOGIC - open PAGE first
+open	http://stores.mattressfirm.com/	
+STATES - prep
+storeEval	
+storedVars['stateLinks'] =[]; 
+var links = window.document.querySelectorAll(storedVars['stateSelector']); 
+for(var i =0; i < links.length; i++) {  
+    storedVars['stateLinks'].push(links[i].href); 
+}
+storeEval	storedVars['stateLinksIndex'] = 0;	
+storeEval	storedVars['stateLinksSize'] = storedVars['stateLinks'].length;	
+echo	${stateLinksIndex}	
+STATES - loop
+while	${stateLinksIndex} < ${stateLinksSize}	
+storeEval	storedVars['stateLink'] = storedVars['stateLinks'][storedVars['stateLinksIndex']]	
+open	${stateLink}	
+storeEval	storedVars['stateLinksIndex'] = storedVars['stateLinksIndex'] + 1;	
+CITIES - prep
+storeEval	
+storedVars['cityLinks'] =[]; 
+var links = window.document.querySelectorAll(storedVars['citySelector']); 
+for(var i =0; i < links.length; i++) { 
+    storedVars['cityLinks'].push(links[i].href); 
+}
+storeEval	storedVars['cityLinksIndex'] = 0;	
+storeEval	storedVars['cityLinksSize'] = storedVars['cityLinks'].length;	
+CITIES - loop
+while	${cityLinksIndex} < ${cityLinksSize}	
+storeEval	storedVars['cityLink'] = storedVars['cityLinks'][storedVars['cityLinksIndex']]	
+open	${cityLink}	
+storeEval	storedVars['cityLinksIndex'] = storedVars['cityLinksIndex'] + 1;	
+PROFILE - prep
+storeEval	
+storedVars['profileLinks'] =[]; 
+var links = window.document.querySelectorAll(storedVars['profileSelector']); 
+for(var i =0; i < links.length; i++) { 
+    storedVars['profileLinks'].push(links[i].href); 
+}
+echo	${profileLinks}	
+storeEval	storedVars['profileLinksIndex'] = 0;	
+storeEval	storedVars['profileLinksSize'] = storedVars['profileLinks'].length;	
+DETAILS - loop
+while	${profileLinksIndex} < ${profileLinksSize}	
+storeEval	storedVars['profileLink'] = storedVars['profileLinks'][storedVars['profileLinksIndex']]	
+open	${profileLink}	
+storeEval	storedVars['profileLinksIndex'] = storedVars['profileLinksIndex'] + 1;	
+captureEntirePageScreenshot	${screenshotsFolder}/${stateLinksIndex}-${cityLinksIndex}-${profileLinksIndex}.png	
+endWhile		
+endWhile		
+endWhile	

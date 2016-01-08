@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.84lumber.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.84locator.com/StoreLocator/Locator.aspx?z=15330</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<!--CSS State Selector-->
+<tr>
+	<td>store</td>
+	<td>['Alabama','Arizona','California','Colorado','Connecticut','Delaware','Florida','Georgia','Illinois','Indiana','Kansas','Kentucky','Louisiana','Maryland','Massachusetts','Mississippi','Missouri','Nebraska','Nevada','New Jersey','New Mexico','New York','North Carolina','Ohio','Pennsylvania','South Carolina','Tennessee','Texas','Virginia','West Virginia']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>state_array = ${my_states};&nbsp;&nbsp;storedVars['state_array'] = state_array;&nbsp;&nbsp;storedVars['number_of_states'] = 31;&nbsp;&nbsp;storedVars['state_index'] = 0;</td>
+	<td></td>
+</tr>
+<!--Select States-->
+<tr>
+	<td>while</td>
+	<td>${state_index}&lt;${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${label_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ContentPlaceHolder1_storeLocator1_lstStates</td>
+	<td>label=${label_state}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Selecting Inner Links using CSS Selector-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileSelector'] = 'a.select'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${css_selector}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinks'] =[];&nbsp;&nbsp;var links = window.document.querySelectorAll(storedVars['profileSelector']);&nbsp;&nbsp;for(var i =0; i &lt; links.length; i++) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storedVars['profileLinks'].push(links[i].href);&nbsp;&nbsp;}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${profileLinks}</td>
+	<td></td>
+</tr>
+<!--Loop Setup-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksSize'] = storedVars['profileLinks'].length;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${profileLinksSize}</td>
+	<td></td>
+</tr>
+<!--PROFILE - loop-->
+<tr>
+	<td>while</td>
+	<td>${profileLinksIndex} &lt; ${profileLinksSize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLink'] = storedVars['profileLinks'][storedVars['profileLinksIndex']]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${profileLink}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/data/temp/${state_index}-${profileLinksIndex}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['profileLinksIndex'] = storedVars['profileLinksIndex'] + 1;	</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_index']=storedVars['state_index'] + 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.dickssportinggoods.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>/data/temp</td>
+	<td>screenshots_folder</td>
+</tr>
+<!--search Loop-->
+<tr>
+	<td>store</td>
+	<td>['NY, NY','Los Angeles; California','Chicago; Illinois','Houston; Texas','Philadelphia; Pennsylvania','Phoenix; Arizona','San Antonio; Texas','San Diego; California','Dallas; Texas','San Jose; California','Austin; Texas','Jacksonville; Florida','Indianapolis; Indiana','San Francisco; California','Columbus; Ohio','Fort Worth; Texas','Charlotte; North Carolina','Detroit; Michigan','El Paso; Texas','Memphis; Tennessee','Boston; Massachusetts','Seattle; Washington','Denver; Colorado','Washington; DC','Nashville-Davidson; Tennessee','Baltimore; Maryland','Louisville/Jefferson; Kentucky','Portland; Oregon','Oklahoma ; Oklahoma','Milwaukee; Wisconsin','Las Vegas; Nevada','Albuquerque; New Mexico','Tucson; Arizona','Fresno; California','Sacramento; California','Long Beach; California','Kansas ; Missouri','Mesa; Arizona','Virginia Beach; Virginia','Atlanta; Georgia','Colorado Springs; Colorado','Raleigh; North Carolina','Omaha; Nebraska','Miami; Florida','Oakland; California','Tulsa; Oklahoma','Minneapolis; Minnesota','Cleveland; Ohio','Wichita; Kansas','Arlington; Texas','New Orleans; Louisiana','Bakersfield; California','Tampa; Florida','Honolulu; Hawaii','Anaheim; California','Aurora; Colorado','Santa Ana; California','St. Louis; Missouri','Riverside; California','Corpus Christi; Texas','Pittsburgh; Pennsylvania','Lexington-Fayette; Kentucky','Anchorage municipality, Alaska','Stockton; California','Cincinnati; Ohio','St. Paul; Minnesota','Toledo; Ohio','Newark; New Jersey','Greensboro; North Carolina','Plano; Texas','Henderson; Nevada','Lincoln; Nebraska','Buffalo; New York','Fort Wayne; Indiana','Jersey ; New Jersey','Chula Vista; California','Orlando; Florida','St. Petersburg; Florida','Norfolk; Virginia','Chandler; Arizona','Laredo; Texas','Madison; Wisconsin','Durham; North Carolina','Lubbock; Texas','Winston-Salem; North Carolina','Garland; Texas','Glendale; Arizona','Hialeah; Florida','Reno; Nevada','Baton Rouge; Louisiana','Irvine; California','Chesapeake; Virginia','Irving; Texas','Scottsdale; Arizona','North Las Vegas; Nevada','Fremont; California','Gilbert town, Arizona','San Bernardino; California','Boise; Idaho','Birmingham; Alabama','Rochester; New York','Richmond; Virginia','Spokane; Washington','Des Moines; Iowa','Montgomery; Alabama','Modesto; California','Fayetteville; North Carolina','Tacoma; Washington','Shreveport; Louisiana','Fontana; California','Oxnard; California','Aurora; Illinois','Moreno Valley; California','Akron; Ohio','Yonkers; New York','Columbus; Georgia','Augusta-Richmond; Georgia','Little Rock; Arkansas','Amarillo; Texas','Mobile; Alabama','Huntington Beach; California','Glendale; California','Grand Rapids; Michigan','Salt Lake, Utah','Tallahassee; Florida','Huntsville; Alabama','Worcester; Massachusetts','Knoxville; Tennessee','Grand Prairie; Texas','Newport News; Virginia','Brownsville; Texas','Santa Clarita; California','Overland Park; Kansas','Providence; Rhode Island','Jackson; Mississippi','Garden Grove; California','Oceanside; California','Chattanooga; Tennessee','Fort Lauderdale; Florida','Rancho Cucamonga; California','Santa Rosa; California','Port St. Lucie; Florida','Ontario; California','Tempe; Arizona','Vancouver; Washington','Springfield; Missouri','Cape Coral; Florida','Pembroke Pines; Florida','Sioux Falls; South Dakota','Peoria; Arizona','Lancaster; California','Elk Grove; California','Corona; California','Eugene; Oregon','Salem; Oregon','Palmdale; California','Salinas; California','Springfield; Massachusetts','Pasadena; Texas','Rockford; Illinois','Pomona; California','Hayward; California','Fort Collins; Colorado','Joliet; Illinois','Escondido; California','Kansas, Kansas','Torrance; California','Bridgeport; Connecticut','Alexandria; Virginia','Sunnyvale; California','Cary town, North Carolina','Lakewood; Colorado','Hollywood; Florida','Paterson; New Jersey','Syracuse; New York','Naperville; Illinois','McKinney; Texas','Mesquite; Texas','Clarksville; Tennessee','Savannah; Georgia','Dayton; Ohio','Orange; California','Fullerton; California','Pasadena; California','Hampton; Virginia','McAllen; Texas','Killeen; Texas','Warren; Michigan','West Valley, Utah','Columbia; South Carolina','New Haven; Connecticut','Sterling Heights; Michigan','Olathe; Kansas','Miramar; Florida','Thousand Oaks; California','Frisco; Texas','Cedar Rapids; Iowa','Topeka; Kansas','Visalia; California','Waco; Texas']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>state_index</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>200</td>
+	<td>number_of_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_array'] =&nbsp;&nbsp;${my_states}</td>
+	<td></td>
+</tr>
+<!--Select State-->
+<tr>
+	<td>while</td>
+	<td>${state_index} &lt; ${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.dickssportinggoods.com/storeLocator/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td>my_current_state</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=search_address</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=search_address</td>
+	<td>${my_current_state}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=search_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${screenshots_folder}/${my_current_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars.state_index++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://stat.pcanet.org/" />
+<title>church2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">church2</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>['AK','AL','AR']</td>
+	<td>my_states</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>state_array = ${my_states};&nbsp;&nbsp;storedVars['state_array'] = state_array;&nbsp;&nbsp;storedVars['number_of_states'] = 3;&nbsp;&nbsp;storedVars['state_index'] = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${state_index}&lt;${number_of_states}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['label_state']=storedVars.state_array[storedVars.state_index]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${label_state}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['state_index']=storedVars['state_index'] + 1;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
